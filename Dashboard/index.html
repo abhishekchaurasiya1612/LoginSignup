@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>MyApp</h2>
+    <ul>
+      <li id="menuDashboard">Dashboard</li>
+      <li id="menuProfile">Profile</li>
+      <li id="menuSettings">Settings</li>
+      <li onclick="logout()">Logout</li>
+    </ul>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <h2 id="greeting"></h2>
+    <h1>Welcome, <span id="userEmail"></span></h1>
+    <p id="lastLogin"></p>
+
+   
+
+    <div class="cards">
+      <div class="card">Users<br><b id="users">120</b></div>
+      <div class="card">Orders<br><b id="orders">75</b></div>
+      <div class="card">Revenue<br><b id="revenue">₹50,000</b></div> 
+    </div>
+    <button onclick="toggleTheme()">🌗 Toggle Theme</button>
+  </div>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>
